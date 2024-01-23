@@ -82,7 +82,7 @@ priceList = []
 predictList = []
  
 historical_data = requests.get("https://api.binance.com/api/v3/klines", 
-                               params={'symbol': 'ETHUSDT', 'interval': '1m', 'limit': 1000}).json()
+                               params={'symbol': 'ETHUSDT', 'interval': '1s', 'limit': 1000}).json()
  
 historical_rows = []
 for candle in historical_data:
